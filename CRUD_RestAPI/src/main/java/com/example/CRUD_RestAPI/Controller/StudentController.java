@@ -31,4 +31,10 @@ public class StudentController {
             service.createStudent(student);
         }
 
+         @PutMapping("students/update/{id}")
+        public void updateStudentbyId(@PathVariable int id, @RequestBody Student updatedStudent){
+        service.updateStudentbyId(id,updatedStudent);
+        }
+
+
 }
