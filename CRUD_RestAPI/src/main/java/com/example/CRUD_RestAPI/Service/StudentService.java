@@ -23,4 +23,8 @@ public class StudentService {
         repo.save(student);
     }
 
+    public void updateStudentbyId(int id, Student updatedStudent) {
+        repo.save(updatedStudent);
+    }
+
 }
